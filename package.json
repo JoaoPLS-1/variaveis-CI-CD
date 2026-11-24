@@ -1,0 +1,26 @@
+{
+  "name": "variaveis-ci-cd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercicio de variaveis de ambiente e warnings no GitHub Actions",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env CI=false react-scripts build",
+    "build:strict": "cross-env CI=true react-scripts build"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}
